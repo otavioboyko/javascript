@@ -3,7 +3,4 @@ function verificar() {
     var ano = data.getFullYear()
     var fAno = document.getElementById('txtano')
     var res = document.getElementById('res')
-    if {
-        var fsex = Document.get
-    }
 }
