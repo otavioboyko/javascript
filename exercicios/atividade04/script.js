@@ -4,7 +4,7 @@ function contar() {
     var passo = document.getElementById('txtp')
     var res = document.getElementById('res')
 
-    if (ini.nodeValue.length == 0 || passo.nodeValue.length == 0) {
+    if (ini..length == 0 || passo.nodeValue.length == 0) {
         window.alert('ERRO!!! numero invalido')
     } else {
        res.innerHTML = 'contando:'
