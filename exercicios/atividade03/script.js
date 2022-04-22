@@ -1,13 +1,12 @@
-function verificar() {
-    var data = new Date()
-    var ano = data.getFullYear()
-    var fano = document.getElementById('txtano')
+function contar() {
+    var ini = document.getElementById('txti')
+    var fim = document.getElementById('txtf')
+    var passo = document.getElementById('txtp')
     var res = document.getElementById('res')
-    if (fano.ariaValueMin.length == 0 || Number(fano.ariaValueMin) > ano) {
-        window.alert('ERRO!!! verifique os dados e tente novamente!')
+
+    if (ini..length == 0 || passo.nodeValue.length == 0) {
+        window.alert('ERRO!!! numero invalido')
     } else {
-        var fsex = document.getElementsByName('radsex')
-        var idade = ano - Number(fano.value)
-        res.innerHTML = `idade calculada ${idade}`
+       res.innerHTML = 'contando:'
     }
 }

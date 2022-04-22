@@ -1,12 +1,6 @@
-function contar() {
-    var ini = document.getElementById('txti')
-    var fim = document.getElementById('txtf')
-    var passo = document.getElementById('txtp')
-    var res = document.getElementById('res')
+function tabuada() {
+    let num = document.getElementById('txtn')
+    let tab = document.getElementById('seltab')
 
-    if (ini..length == 0 || passo.nodeValue.length == 0) {
-        window.alert('ERRO!!! numero invalido')
-    } else {
-       res.innerHTML = 'contando:'
-    }
+    let n = Number (num.ariaValueMax)
 }

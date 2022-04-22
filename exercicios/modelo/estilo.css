@@ -1,5 +1,5 @@
 body {
-    background: rgb(197, 139, 98);
+    background: rgb(250, 123, 98);
     font: normal 15px arial;
 }
 
@@ -14,11 +14,7 @@ section {
     padding: 15px;
     width: 500px;
     margin: auto;
-    box-shadow: 3px 3px 10px rgba(255, 0, 0);
-}
-
-select#flista {
-    width: 150px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
 }
 
 footer {

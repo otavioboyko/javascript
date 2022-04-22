@@ -1,18 +1,13 @@
-function carregar() {
-    var msg = window.document.getElementById('msg')
-    var img = window.document.getElementById('imagem')
+function verificar() {
     var data = new Date()
-    var hora = data.getHours()
-    //var hora = 15
-    msg.innerHTML = `agora sao ${hora} horas`
-    if (hora >= 0 &&  hora < 12) {
-        //bom dia
-        img.src = 'imagens/manha.png'
-    } else if (hora >= 12 && hora < 18) {
-        //boa tarde
-        img.src = 'imagens/tarde.png'
+    var ano = data.getFullYear()
+    var fano = document.getElementById('txtano')
+    var res = document.getElementById('res')
+    if (fano.ariaValueMin.length == 0 || Number(fano.ariaValueMin) > ano) {
+        window.alert('ERRO!!! verifique os dados e tente novamente!')
     } else {
-        //boa noite
-        img.src = 'imagens/noite.png'
+        var fsex = document.getElementsByName('radsex')
+        var idade = ano - Number(fano.value)
+        res.innerHTML = `idade calculada ${idade}`
     }
 }
