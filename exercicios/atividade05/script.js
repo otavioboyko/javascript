@@ -21,8 +21,26 @@ function inlista(n, l) {
 
 function adcionar() {
     if(isNumero(num.ariaValueNow) && !inlista(num.ariaValueNow, valores)) {
-        window.alert('tudo ok')
+      valores.push(Number(num.ariaValueMax))
+      let item = document.createElement('option')
+      item.text = `valor ${num.ariaValueMax} adcionado`
+      lista.appendChild(item)
     } else {
         window.alert ('valor invalido ou nao encontrado na lista')
     }
+    num.ariaValueNow = ''
+    num.focus()
+}
+
+function finalizar() {
+    if (valores.length == 0) {
+        window.alert('adcionar valores antes de finalizar')
+    } else {
+        let tot = valores.length
+
+
+        res.innerHTML = ''
+        res.innerHTML += `<p>ao todo temos ${tot} elementos</p>`
+    }
+
 }
