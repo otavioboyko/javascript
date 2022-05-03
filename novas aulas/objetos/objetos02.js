@@ -19,3 +19,8 @@ const tarefas = [
 const description3 = tarefas[2].description
 
 console.log(description3)
+
+const tarefasJSON = JSON.stringify(tarefas)
+const tarefasLista = JSON.parse(tarefasJSON)
+
+console.log(tarefasLista)
