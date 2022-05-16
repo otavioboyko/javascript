@@ -17,4 +17,4 @@ const botao = document.querySelectorAll('.btn')
 //item.lastElementChild.innerHTML = "<h1>oi</h1>" //podemos modificar o html com o inner html
 
 botao.style.background = "red"; //muda a cor do botao
-botao.style.color = "blue" //muda coisas que estao no botao
+botao.style.color = "blue" //muda coisas que esta no botao
