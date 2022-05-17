@@ -18,3 +18,38 @@ const botao = document.querySelectorAll('.btn')
 
 botao.style.background = "red"; //muda a cor do botao
 botao.style.color = "blue" //muda coisas que esta no botao
+
+const nameInput = document.querySelector('#name')
+const emailInput = document.querySelector('#email')
+const submiButton = document.querySelector('#submit-button')
+
+const errorMessae = document.querySelector('.msg')
+
+const items = document.querySelector('.items')
+
+submiButton.addEventListener('click', (e) => {
+    e.preventDefault()
+
+    const nameValue = nameInput.value;
+    const emailValue = emailInput.value;
+
+    if (nameValue === '' || emailValue === '') {
+        errorMessae.textContent = "por favor preencha os campos necessarios";
+        errorMessae.classList = "error";
+
+        setTimeout(() => {
+            errorMessae.textContent = "";
+            errorMessae.classList = "";
+        }, 5000);
+        return;
+    }
+
+    const li = document.createElement("li");
+    li.classList = 'item'
+    li.innerHTML = `nome: ${nameValue} <br /> Email: ${emailValue}`
+
+    items.appendChild(li);
+
+    nameInput.value = '';
+    emailInput.value = '';
+})
